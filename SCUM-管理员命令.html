@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap-5.css" />
+		<link rel="stylesheet" href="css/Font Awesome.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/Jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/bootstrap-5.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+		<script type="text/javascript" src="js/SCUM-index.js"></script>
+	</head>
+
+	<body class="bg-dark">
+		
+		<!--导航栏-->
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="navbar navbar-expand-md bg-dark-TM navbar-dark fixed-top justify-content-end">
+					<a class="navbar-brand" href="index.html">
+						<h1><font class="text-danger"> S </font>C <font class="text-warning"> U </font> M</h1></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link text-white " href="SCUM-数据库·.html">数据库</a>
+							</li>
+							<li class="nav-item dropdown">
+
+								<a class="nav-link text-white dropdown-toggle" href="SCUM-数据库·.html" id="navbardrop" data-toggle="dropdown"></a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item " href="SCUM-地图-index.html">地图</a>
+									<a class="dropdown-item" href="#">武器</a>
+									<a class="dropdown-item" href="#">武器伤害</a>
+									<a class="dropdown-item" href="#">护甲</a>
+									<a class="dropdown-item" href="#">载具</a>
+									<a class="dropdown-item" href="#">医疗</a>
+									<a class="dropdown-item" href="#">食物</a>
+									<a class="dropdown-item" href="#">动物</a>
+									<a class="dropdown-item" href="#">技能</a>
+									<a class="dropdown-item" href="#">代谢</a>
+								</div>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link text-white" href="SCUM-原创专栏.html">原创专栏</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link text-white " href="SCUM-命令合集.html">命令合集</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link text-white dropdown-toggle" href="SCUM-命令合集.html" id="navbardrop" data-toggle="dropdown"></a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">管理员</a>
+									<a class="dropdown-item" href="#">武器</a>
+									<a class="dropdown-item" href="#">服饰</a>
+									<a class="dropdown-item" href="#">食物</a>
+									<a class="dropdown-item" href="#">杂物</a>
+									<a class="dropdown-item" href="#">载具</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		
+		
+		   <!--SCUN-指令合集-巨幕-->
+	<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<img src="img/HF-6.png" width="100%">
+				</div>
+			</div>
+	</div>
+	<br />	
+		<!--SCUM管理员标题-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12">
+					<div class="box-1 bg-dark">
+						<h1 class="text-white text-center font-weight-bold">SCUM<font class="text-danger">管理员命令</font></h1>
+					</div>
+				</div>
+
+				<div class="col-lg-12 col-sm-12">
+					<div class="box-1 bg-dark">
+						<h6 class="text-white text-center font-weight-bold"></h6>
+					</div>
+				</div>
+			</div>
+		</div><br />
+       		<!--面包屑导航-->
+		<div class="container-fluid">
+			        	<div class="row">
+        		<div class="col-12">
+        			<ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">首页</a></li>
+    <li class="breadcrumb-item"><a href="SCUM-命令合集.html">命令合集</a></li>
+    <li class="breadcrumb-item"><a href="SCUM-管理员命令.html">管理员命令</a></li>
+    <li class="breadcrumb-item active">游戏指令</li>
+  </ul>
+        		</div>
+        	</div>
+		</div>
+		<!--管理员命令选项卡头部-->
+		<div class="container">
+			<div class="row">
+				<ul class="nav nav-pills justify-content-center" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="pill" href="#YXZL">游戏指令</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#CSZB">传送坐标指令</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#NPC">NPC召唤指令</a>
+    </li>
+  </ul>
+			</div>
+			<div class="tab-content">
+    <div id="YXZL" class="container tab-pane active"><br>
+     <table class="table table-hover bg-light rounded">
+    <thead>
+      <tr>
+        <th>指令</th>
+        <th>说明</th>
+        <th>注解</th>
+      </tr>
+    </thead>
+    <tbody>
+    	 <tr>
+        <td>#setgodmode true</td>
+        <td>上帝模式</td>
+        <td>一键制作</td>
+      </tr>
+      <tr>
+        <td>#SetTime (数字)</td>
+        <td>#SetTime (时间)</td>
+        <td>时间调整</td>
+      </tr>
+      <tr>
+        <td>#SetWeather (1/0) (数字)</td>
+        <td>#SetWeather 0晴天 1雨天</td>
+        <td>天气调整</td>
+      </tr>
+      <tr>
+        <td>#Kick (SteamID,SteamName,CharacterName)</td>
+        <td>踢出 (steam64位ID或steami名字，或角色名称)</td>
+        <td>从服务器中踢出一名指定的玩家</td>
+      </tr>
+      <tr>
+        <td>#Ban (SteamID,SteamName,CharacterName)</td>
+        <td>封禁 (steam64位ID或steami名字，或角色名称)</td>
+        <td>将指定的玩家从服务器中永久封禁</td>
+      </tr>
+      <tr>
+        <td>#ListAssets Item (filter)</td>
+        <td>列出能被刷出的物资列表(过滤)</td>
+        <td>显示可以被刷出的物资列表，过滤功能是选择性功能，如果你选择“wood”木头作为过滤条件，所有含有“wood”的物资将会被陈列</td>
+      </tr>
+      <tr>
+        <td>#SpawnCharacter (Asset) (Amount)</td>
+        <td>刷出指定npc(名称) (数量)</td>
+        <td>刷出指定的NPC，例如#spawncharacter bp_zombie3 3按照格式也就是#刷（空格）僵尸（空格）3，你面前将会出现3只僵尸</td>
+      </tr>
+      <tr>
+        <td>#Teleport (X) (Y) (Z) (玩家)</td>
+        <td>传送到坐标(X) (Y) (Z)</td>
+        <td>传送当前输入指令的玩家到指定的坐标点</td>
+      </tr>
+      <tr>
+        <td>#TeleportTo 玩家</td>
+        <td>传送到(steam64位ID或steami名字，或角色名称)</td>
+        <td>传送当前输入指令的玩家到指定的玩家旁边</td>
+      </tr>
+      <tr>
+        <td>#teleporttome 玩家</td>
+        <td>传送(steam64位ID或steami名字，或角色名称)</td>
+        <td>传送指定的玩家到管理员旁边</td>
+      </tr>
+      <tr>
+        <td>#SetFamePoints 声望 昵称</td>
+        <td>设置声望格式为：代码 声望 名字 </td>
+        <td>将指定的名誉值加到特定的玩家身上，如果没有输入(steam64位ID或steami名字，或角色名称)那么名誉值将会加在当前输入指令的玩家身上</td>
+      </tr>
+      <tr>
+        <td>#teleportto3pm 玩家</td>
+        <td>传送(steam64位ID或steami名字，或角色名称)</td>
+        <td>传送指定的玩家到随机地方</td>
+      </tr>
+      <tr>
+        <td>#teleporttovehicle(ID)(玩家) </td>
+        <td>传送(steam64位ID或steami名字，或角色名称)</td>
+        <td>传送指定的玩家 (ID) [玩家] 传送到交通工具 #teleporttovehicle 1 玩家</td>
+      </tr>
+      <tr>
+        <td>#VisualizeBulletTrajectories true/false</td>
+        <td>弹道显示 开/关</td>
+        <td>弹道显示 开/关</td>
+      </tr>
+      <tr>
+        <td>#ListSpawnedVehicles </td>
+        <td>车辆ID显示</td>
+        <td>车辆ID显示</td>
+      </tr>
+      <tr>
+        <td>#TeleportToVehicle</td>
+        <td>传送到车辆ID</td>
+        <td>传送到车辆ID</td>
+      </tr>
+      <tr>
+        <td>#DestroyVehicle</td>
+        <td>销毁指定的车辆ID</td>
+        <td>销毁指定的车辆ID</td>
+      </tr>
+      <tr>
+        <td>#destroyallvehicles please</td>
+        <td>“销毁所有车辆”的管理员命令</td>
+        <td>“销毁所有车辆”的管理员命令</td>
+      </tr>
+      <tr>
+        <td>#setgodmode true  </td>
+        <td>管理每次进游戏都需要输入代码激活（一键制作）单机也可使用</td>
+        <td>服务器后台在设置管理员ID的后面加[godmode]
+例：12345678901234567[godmode]</td>
+      </tr>
+      
+      <tr>
+        <td>#mute 玩家</td>
+        <td>禁言玩家(steam64位ID或steami名字，或角色名称)</td>
+        <td>禁言指定玩家在游戏内发言</td>
+      </tr>
+      <tr>
+        <td>#unmute 玩家</td>
+        <td>禁言解除(steam64位ID或steami名字，或角色名称)</td>
+        <td>解除指定禁言玩家在游戏内发言</td>
+      </tr>
+      <tr>
+        <td>#listmutedplayers</td>
+        <td>看禁言玩家清单</td>
+        <td>查看所有禁言玩家清单名称</td>
+      </tr>
+      <tr>
+        <td>#listplayers true </td>
+        <td>查询在线玩家并且复制</td>
+        <td>查询在线玩家并且复制</td>
+      </tr>
+      <tr>
+        <td>#listsquad</td>
+        <td>这将列出服务器上的所有小队及其小队ID。</td>
+        <td>这将列出服务器上的所有小队及其小队ID。</td>
+      </tr>
+      <tr>
+        <td>#listsquadmembers</td>
+        <td>#listsquadmembers (SquadName / SquadID) [true | false]</td>
+        <td>这将列出该队的成员，他们的编号或他们的等级。</td>
+      </tr>
+      <tr>
+        <td>#resetsquadinfo</td>
+        <td>#resetsquadinfo (SquadName / SquadID) [true | false]</td>
+        <td>这将清除小队信息面板并生成一个新的随机小队名称</td>
+      </tr>
+      <tr>
+        <td>#SetHealthToItemInHands</td>
+        <td>#SetHealthToItemInHands 0-1</td>
+        <td>用于设置拿在上里物品的持久值。</td>
+      </tr>
+      <tr>
+        <td>#showotherplayerinfo true/false</td>
+        <td>玩家昵称显示 开/关</td>
+        <td>玩家名字显示 开/关 打开地图点击玩家昵称可以传到目标人物处</td>
+      </tr>
+      <tr>
+        <td>#showotherplayerlocations true/false</td>
+        <td>玩家显示 开/关</td>
+        <td>玩家显示 开/关 打开地图点击玩家可以传到目标人物处</td>
+      </tr>
+     
+      
+    </tbody>
+  </table>
+    </div>
+    <div id="CSZB" class="container tab-pane fade"><br>
+     <table class="table table-hover bg-light rounded">
+    <thead>
+      <tr>
+        <th class="text-danger">A区</th>
+        <th>位置</th>
+        <th>坐标</th>
+      </tr>
+    </thead>
+    <tbody>
+    	 <tr>
+        <td>A1</td>
+        <td> 鱼工厂</td>
+        <td>#teleport -355105 -351449 0</td>
+      </tr>
+      <tr>
+        <td>A1 </td>
+        <td>加农炮</td>
+        <td>#teleport -585396 -501496 9823</td>
+      </tr>
+      <tr>
+        <td>A1</td>
+        <td> 岛加农炮2</td>
+        <td>#teleport -507575 -543128 4961</td>
+      </tr>
+      <tr>
+        <td>A1</td>
+        <td> 城墙上</td>
+        <td>#teleport -600138 -550961 9549</td>
+      </tr>
+      <tr>
+        <td>A2</td>
+        <td> 奶酪厂</td>
+        <td>#teleport -111028 -355004 15425</td>
+      </tr>
+      <tr>
+        <td>A2</td>
+        <td> 岛加农炮1</td>
+        <td>显示可以被刷出的物资列表，过滤功能是选择性功能，如果你选择“wood”木头作为过滤条件，所有含有“wood”的物资将会被陈列</td>
+      </tr>
+      <tr>
+        <td>#SpawnCharacter (Asset) (Amount)</td>
+        <td>刷出指定npc(名称) (数量)</td>
+        <td>刷出指定的NPC，例如#spawncharacter bp_zombie3 3按照格式也就是#刷（空格）僵尸（空格）3，你面前将会出现3只僵尸</td>
+      </tr>
+      <tr>
+        <td>#Teleport (X) (Y) (Z) (玩家)</td>
+        <td>传送到坐标(X) (Y) (Z)</td>
+        <td>传送当前输入指令的玩家到指定的坐标点</td>
+      </tr>
+      <tr>
+        <td>#TeleportTo 玩家</td>
+        <td>传送到(steam64位ID或steami名字，或角色名称)</td>
+        <td>传送当前输入指令的玩家到指定的玩家旁边</td>
+      </tr>
+      <tr>
+        <td>#teleporttome 玩家</td>
+        <td>传送(steam64位ID或steami名字，或角色名称)</td>
+        <td>传送指定的玩家到管理员旁边</td>
+      </tr>
+      <tr>
+        <td>#SetFamePoints 声望 昵称</td>
+        <td>设置声望格式为：代码 声望 名字 </td>
+        <td>将指定的名誉值加到特定的玩家身上，如果没有输入(steam64位ID或steami名字，或角色名称)那么名誉值将会加在当前输入指令的玩家身上</td>
+      </tr>
+      <tr>
+        <td>#teleportto3pm 玩家</td>
+        <td>传送(steam64位ID或steami名字，或角色名称)</td>
+        <td>传送指定的玩家到随机地方</td>
+      </tr>
+      <tr>
+        <td>#teleporttovehicle(ID)(玩家) </td>
+        <td>传送(steam64位ID或steami名字，或角色名称)</td>
+        <td>传送指定的玩家 (ID) [玩家] 传送到交通工具 #teleporttovehicle 1 玩家</td>
+      </tr>
+      <tr>
+        <td>#VisualizeBulletTrajectories true/false</td>
+        <td>弹道显示 开/关</td>
+        <td>弹道显示 开/关</td>
+      </tr>
+      <tr>
+        <td>#ListSpawnedVehicles </td>
+        <td>车辆ID显示</td>
+        <td>车辆ID显示</td>
+      </tr>
+      <tr>
+        <td>#TeleportToVehicle</td>
+        <td>传送到车辆ID</td>
+        <td>传送到车辆ID</td>
+      </tr>
+      <tr>
+        <td>#DestroyVehicle</td>
+        <td>销毁指定的车辆ID</td>
+        <td>销毁指定的车辆ID</td>
+      </tr>
+      <tr>
+        <td>#destroyallvehicles please</td>
+        <td>“销毁所有车辆”的管理员命令</td>
+        <td>“销毁所有车辆”的管理员命令</td>
+      </tr>
+      <tr>
+        <td>#setgodmode true  </td>
+        <td>管理每次进游戏都需要输入代码激活（一键制作）单机也可使用</td>
+        <td>服务器后台在设置管理员ID的后面加[godmode]
+例：12345678901234567[godmode]</td>
+      </tr>
+      
+      <tr>
+        <td>#mute 玩家</td>
+        <td>禁言玩家(steam64位ID或steami名字，或角色名称)</td>
+        <td>禁言指定玩家在游戏内发言</td>
+      </tr>
+      <tr>
+        <td>#unmute 玩家</td>
+        <td>禁言解除(steam64位ID或steami名字，或角色名称)</td>
+        <td>解除指定禁言玩家在游戏内发言</td>
+      </tr>
+      <tr>
+        <td>#listmutedplayers</td>
+        <td>看禁言玩家清单</td>
+        <td>查看所有禁言玩家清单名称</td>
+      </tr>
+      <tr>
+        <td>#listplayers true </td>
+        <td>查询在线玩家并且复制</td>
+        <td>查询在线玩家并且复制</td>
+      </tr>
+      <tr>
+        <td>#listsquad</td>
+        <td>这将列出服务器上的所有小队及其小队ID。</td>
+        <td>这将列出服务器上的所有小队及其小队ID。</td>
+      </tr>
+      <tr>
+        <td>#listsquadmembers</td>
+        <td>#listsquadmembers (SquadName / SquadID) [true | false]</td>
+        <td>这将列出该队的成员，他们的编号或他们的等级。</td>
+      </tr>
+      <tr>
+        <td>#resetsquadinfo</td>
+        <td>#resetsquadinfo (SquadName / SquadID) [true | false]</td>
+        <td>这将清除小队信息面板并生成一个新的随机小队名称</td>
+      </tr>
+      <tr>
+        <td>#SetHealthToItemInHands</td>
+        <td>#SetHealthToItemInHands 0-1</td>
+        <td>用于设置拿在上里物品的持久值。</td>
+      </tr>
+      <tr>
+        <td>#showotherplayerinfo true/false</td>
+        <td>玩家昵称显示 开/关</td>
+        <td>玩家名字显示 开/关 打开地图点击玩家昵称可以传到目标人物处</td>
+      </tr>
+      <tr>
+        <td>#showotherplayerlocations true/false</td>
+        <td>玩家显示 开/关</td>
+        <td>玩家显示 开/关 打开地图点击玩家可以传到目标人物处</td>
+      </tr>
+     
+      
+    </tbody>
+  </table>
+    </div>
+    <div id="NPC" class="container tab-pane fade"><br>
+     
+    </div>
+  </div>
+		</div>
+		<!--管理员命令选项卡内容-->
+
+		<!--回到顶部-->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+			<ul class="navbar-nav fixed-bottom">
+			<li class="nav-item">
+				<a class="nav-link " href="#top"><img src="img/回到顶部.png" width="50px"></a>
+			</li>
+		</ul>
+		</div>
+	</div>
+</div>
+		<!--尾栏-->
+		<div class="container-fluid bg-black ">
+						<br />
+						<div class="row">
+							<div class="col-lg-3 col-sm-0">
+
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<ul>
+									<li>
+										<a class="text-white">SCUN(QQ)交流群：111111111</a>
+									</li>
+									<li>
+										<a class="text-white">作者(QQ)：2523748338</a>
+									</li>
+									<li>
+										<a class="text-white">投稿(WX)：</a>
+									</li>
+									<li>
+										<a class="text-white">本网站仅供学习交流</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<a data-toggle="tooltip" data-placement="right" title="扫一扫关注公众号"><img src="img/微信-二维码.jpg" width="100px" /></a>
+								<a><img src="img/scumcharacter.png" width="100px" /></a>
+							</div>
+							<div class="col-lg-3 col-sm-0">
+
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="col-lg-4 col-sm-12">
+
+							</div>
+							<div class="col-lg-4 col-sm-12">
+
+								<li>
+									<a class="text-white">版权所有：狗子&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如有侵权请扫二维码联系作者
+									</a>
+								</li>
+							</div>
+							<div class="col-lg-4 col-sm-12">
+
+							</div>
+						</div>
+						<br />
+					</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap-4.css" />
+		<link rel="stylesheet" href="css/Font Awesome.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/Jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/bootstrap-5.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+		<script type="text/javascript" src="js/SCUM-index.js"></script>
+	</head>
+
+	<body class="bg-dark" data-spy="scroll" data-target=".navbar">
+    <!--导航栏-->
+    <div class="container-fluid">
+	<div class="row">
+		<nav class="navbar navbar-expand-md bg-dark-TM navbar-dark fixed-top justify-content-end">
+			<a class="navbar-brand" href="index.html">
+				<h1><font class="text-danger"> S </font>C <font class="text-warning"> U </font> M</h1></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link text-white " href="SCUM-数据库·.html">数据库</a>
+					</li>
+					<li class="nav-item dropdown">
+
+						<a class="nav-link text-white dropdown-toggle" href="SCUM-数据库·.html" id="navbardrop" data-toggle="dropdown"></a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item " href="SCUM-地图-index.html">地图</a>
+							<a class="dropdown-item" href="#">武器</a>
+							<a class="dropdown-item" href="#">武器伤害</a>
+							<a class="dropdown-item" href="#">护甲</a>
+							<a class="dropdown-item" href="#">载具</a>
+							<a class="dropdown-item" href="#">医疗</a>
+							<a class="dropdown-item" href="#">食物</a>
+							<a class="dropdown-item" href="#">动物</a>
+							<a class="dropdown-item" href="#">技能</a>
+							<a class="dropdown-item" href="#">代谢</a>
+						</div>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link text-white" href="SCUM-原创专栏.html">原创专栏</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link text-white " href="SCUM-命令合集.html">命令合集</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link text-white dropdown-toggle" href="SCUM-命令合集.html" id="navbardrop" data-toggle="dropdown"></a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">管理员</a>
+							<a class="dropdown-item" href="#">武器</a>
+							<a class="dropdown-item" href="#">服饰</a>
+							<a class="dropdown-item" href="#">食物</a>
+							<a class="dropdown-item" href="#">杂物</a>
+							<a class="dropdown-item" href="#">载具</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</div>
+
+    <!--SCUN-地图-巨幕-->
+	<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<img src="img/HF-2.png" width="100%">
+				</div>
+			</div>
+	</div>
+	<br />
+	<!--地图标题-->
+	<div class="container">
+	<div class="row">
+		<div class="col-lg-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="box-1 bg-dark">
+				<h1 class="text-white text-center font-weight-bold">SCUM<font class="text-danger">地图</font></h1>
+			</div>
+		</div>
+		<div class="col-lg-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="box-1 bg-dark">
+				<h6 class="text-white text-center font-weight-bold">我们有一系列SCUM地图，包括掩体位置、加油站位置和汽车生成位置。</h1>
+					</div>
+		</div>
+			</div>
+	</div><br />
+	<!--面包屑-->
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-0 col-sm-1 col-md-1 col-lg-1">
+
+		</div>
+		<div class="col-11 col-sm-11 col-md-11 col-lg-11">
+			<ul class="breadcrumb">
+				<li class="breadcrumb-item">
+					<a href="index.html">首页</a>
+				</li>
+				<li class="breadcrumb-item">
+					<a href="SCUM-数据库·.html">数据库</a>
+				</li>
+				<li class="breadcrumb-item active">
+					<a>地图</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+    </div>
+	
+	<!--地图拟态框-->
+	<div class="container-fluid">
+		<!--maps-1 完整地图-->
+		<div class="modal fade" id="maps-1">
+	<div class="modal-dialog modal-lg" >
+		<div class="modal-content">
+			<!-- 模态框主体 -->
+			<div class="modal-body bg-dark">
+				<img src="img-maps/map-1.png" class="img-fluid" />
+			</div>
+			<!-- 模态框底部 -->
+			<div class="modal-footer">
+				<h1>完整地图</h1>
+				<button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--maps-2 沉船地图-->
+		<div class="modal fade" id="maps-2">
+	<div class="modal-dialog modal-lg" >
+		<div class="modal-content">
+			<!-- 模态框主体 -->
+			<div class="modal-body bg-dark">
+				<img src="img-maps/map-2.png" class="img-fluid" />
+			</div>
+			<!-- 模态框底部 -->
+			<div class="modal-footer">
+				<h1>沉船地图</h1>
+				<button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--maps-3 营地地图-->
+		<div class="modal fade" id="maps-3">
+	<div class="modal-dialog modal-lg" >
+		<div class="modal-content">
+			<!-- 模态框主体 -->
+			<div class="modal-body bg-dark">
+				<img src="img-maps/map-3.png" class="img-fluid" />
+			</div>
+			<!-- 模态框底部 -->
+			<div class="modal-footer">
+				<h1>营地地图</h1>
+				<button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--maps-4 二战堡垒地图-->
+		<div class="modal fade" id="maps-4">
+	<div class="modal-dialog modal-lg" >
+		<div class="modal-content">
+			<!-- 模态框主体 -->
+			<div class="modal-body bg-dark">
+				<img src="img-maps/map-4.png" class="img-fluid" />
+			</div>
+			<!-- 模态框底部 -->
+			<div class="modal-footer">
+				<h1>二战堡垒地图</h1>
+				<button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--maps-5 警局地图-->
+		<div class="modal fade" id="maps-5">
+	<div class="modal-dialog modal-lg" >
+		<div class="modal-content">
+			<!-- 模态框主体 -->
+			<div class="modal-body bg-dark">
+				<img src="img-maps/map-5.png" class="img-fluid" />
+			</div>
+			<!-- 模态框底部 -->
+			<div class="modal-footer">
+				<h1>警局地图</h1>
+				<button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--maps-6 作坊地图-->
+		<div class="modal fade" id="maps-6">
+	<div class="modal-dialog modal-lg" >
+		<div class="modal-content">
+			<!-- 模态框主体 -->
+			<div class="modal-body bg-dark">
+				<img src="img-maps/map-6.png" class="img-fluid" />
+			</div>
+			<!-- 模态框底部 -->
+			<div class="modal-footer">
+				<h1>作坊地图</h1>
+				<button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--maps-7 载具概率刷新点地图-->
+		<div class="modal fade" id="maps-7">
+	<div class="modal-dialog modal-lg" >
+		<div class="modal-content">
+			<!-- 模态框主体 -->
+			<div class="modal-body bg-dark">
+				<img src="img-maps/map-7.png" class="img-fluid" />
+			</div>
+			<!-- 模态框底部 -->
+			<div class="modal-footer">
+				<h1>载具概率刷新点地图</h1>
+				<button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--maps-8 洞地图-->
+		<div class="modal fade" id="maps-8">
+	<div class="modal-dialog modal-lg" >
+		<div class="modal-content">
+			<!-- 模态框主体 -->
+			<div class="modal-body bg-dark">
+				<img src="img-maps/map-8.png" class="img-fluid" />
+			</div>
+			<!-- 模态框底部 -->
+			<div class="modal-footer">
+				<h1>洞地图</h1>
+				<button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--maps-9 船概率刷新地图-->
+		<div class="modal fade" id="maps-9">
+	<div class="modal-dialog modal-lg" >
+		<div class="modal-content">
+			<!-- 模态框主体 -->
+			<div class="modal-body bg-dark">
+				<img src="img-maps/map-9.png" class="img-fluid" />
+			</div>
+			<!-- 模态框底部 -->
+			<div class="modal-footer">
+				<h1>船概率刷新地图</h1>
+				<button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--maps-10 加油站地图-->
+		<div class="modal fade" id="maps-10">
+	<div class="modal-dialog modal-lg" >
+		<div class="modal-content">
+			<!-- 模态框主体 -->
+			<div class="modal-body bg-dark">
+				<img src="img-maps/map-10.png" class="img-fluid" />
+			</div>
+			<!-- 模态框底部 -->
+			<div class="modal-footer">
+				<h1>加油站地图</h1>
+				<button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--maps-11 城镇地图-->
+		<div class="modal fade" id="maps-11">
+	<div class="modal-dialog modal-lg" >
+		<div class="modal-content">
+			<!-- 模态框主体 -->
+			<div class="modal-body bg-dark">
+				<img src="img-maps/map-11.png" class="img-fluid" />
+			</div>
+			<!-- 模态框底部 -->
+			<div class="modal-footer">
+				<h1>城镇地图</h1>
+				<button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	</div>	
+	<!--地图列表-->
+<div class="container">
+	<div class="row">
+		<!--maps-1-完整地图-->
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="card">
+				<img class="card-img-top"  src="img-maps/map-1.png" data-toggle="modal" data-target="#maps-1" />
+				<div class="card-body bg-dark">
+					<a href="SCUM-maps/SCUM-map-1.html">
+						<h4 class="card-title text-white">完整地图</h4>
+						<p class="card-text text-white">2021-12-12</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--maps-2-沉船地图-->
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="card">
+				<img class="card-img-top"  src="img-maps/map-2.png" data-toggle="modal" data-target="#maps-2" />
+				<div class="card-body bg-dark">
+					<a href="SCUM-maps/SCUM-map-2.html">
+						<h4 class="card-title text-white">沉船地图</h4>
+						<p class="card-text text-white">2021-12-12</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--maps-3-营地地图-->
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="card">
+				<img class="card-img-top"  src="img-maps/map-1.png" data-toggle="modal" data-target="#maps-3" />
+				<div class="card-body bg-dark">
+					<a href="SCUM-maps/SCUM-map-3.html">
+						<h4 class="card-title text-white">营地地图</h4>
+						<p class="card-text text-white">2021-12-12</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--maps-4-二战堡垒地图-->
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="card">
+				<img class="card-img-top"  src="img-maps/map-4.png" data-toggle="modal" data-target="#maps-4" />
+				<div class="card-body bg-dark">
+					<a href="SCUM-maps/SCUM-map-4.html">
+						<h4 class="card-title text-white">二战堡垒地图</h4>
+						<p class="card-text text-white">2021-12-12</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--maps-5-警局地图-->
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="card">
+				<img class="card-img-top"  src="img-maps/map-5.png" data-toggle="modal" data-target="#maps-5" />
+				<div class="card-body bg-dark">
+					<a href="SCUM-maps/SCUM-map-5.html">
+						<h4 class="card-title text-white">警局地图</h4>
+						<p class="card-text text-white">2021-12-12</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--maps-6-作坊地图-->
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="card">
+				<img class="card-img-top"  src="img-maps/map-6.png" data-toggle="modal" data-target="#maps-6" />
+				<div class="card-body bg-dark">
+					<a href="SCUM-maps/SCUM-map-6.html">
+						<h4 class="card-title text-white">作坊地图</h4>
+						<p class="card-text text-white">2021-12-12</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--maps-7-载具概率刷新地图-->
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="card">
+				<img class="card-img-top"  src="img-maps/map-7.png" data-toggle="modal" data-target="#maps-7" />
+				<div class="card-body bg-dark">
+					<a href="SCUM-maps/SCUM-map-7.html">
+						<h4 class="card-title text-white">载具概率刷新地图</h4>
+						<p class="card-text text-white">2021-12-12</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--maps-8-洞地图-->
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="card">
+				<img class="card-img-top"  src="img-maps/map-8.png" data-toggle="modal" data-target="#maps-8" />
+				<div class="card-body bg-dark">
+					<a href="SCUM-maps/SCUM-map-8.html">
+						<h4 class="card-title text-white">洞地图</h4>
+						<p class="card-text text-white">2021-12-12</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--maps-9-船概率刷新地图-->
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="card">
+				<img class="card-img-top"  src="img-maps/map-9.png" data-toggle="modal" data-target="#maps-9" />
+				<div class="card-body bg-dark">
+					<a href="SCUM-maps/SCUM-map-9.html">
+						<h4 class="card-title text-white">船概率刷新地图</h4>
+						<p class="card-text text-white">2021-12-12</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--maps-10-加油站地图-->
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="card">
+				<img class="card-img-top"  src="img-maps/map-10.png" data-toggle="modal" data-target="#maps-10" />
+				<div class="card-body bg-dark">
+					<a href="SCUM-maps/SCUM-map-10.html">
+						<h4 class="card-title text-white">加油站地图</h4>
+						<p class="card-text text-white">2021-12-12</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!--maps-11-城镇地图-->
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="card">
+				<img class="card-img-top"  src="img-maps/map-11.png" data-toggle="modal" data-target="#maps-11" />
+				<div class="card-body bg-dark">
+					<a href="SCUM-maps/SCUM-map-1.html">
+						<h4 class="card-title text-white">城镇地图</h4>
+						<p class="card-text text-white">2021-12-12</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+			
+		<!--回到顶部-->
+		<div class="container-fluid">
+							<ul class="navbar-nav fixed-bottom">
+								<li class="nav-item">
+									<a class="nav-link " href="#top"><img src="img/回到顶部.png" width="50px"></a>
+								</li>
+							</ul>
+					</div>
+		<!--尾栏-->
+		<div class="container-fluid bg-black ">
+			<br />
+			<div class="row">
+				<div class="col-lg-3 col-sm-0">
+
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<ul>
+						<li>
+							<a class="text-white">SCUN(QQ)交流群：111111111</a>
+						</li>
+						<li>
+							<a class="text-white" >作者(QQ)：2523748338</a>
+						</li>
+						<li>
+							<a class="text-white" >投稿(WX)：</a>
+						</li>
+						<li>
+							<a class="text-white" >本网站仅供学习交流</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<a data-toggle="tooltip" data-placement="right" title="扫一扫关注公众号"><img src="img/微信-二维码.jpg" width="100px" /></a>
+					<a><img src="img/scumcharacter.png" width="100px" /></a>
+				</div>
+				<div class="col-lg-3 col-sm-0">
+
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<div class="col-lg-4 col-sm-12">
+
+				</div>
+				<div class="col-lg-4 col-sm-12">
+
+					<li>
+						<a class="text-white">版权所有：狗子&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如有侵权请扫二维码联系作者
+						</a>
+						
+					</li>
+				</div>
+				<div class="col-lg-4 col-sm-12">
+
+				</div>
+			</div>
+			<br />
+		</div>
+	</body>
+
+</html>
